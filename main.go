@@ -14,5 +14,6 @@ func main() {
 	router.LoadHTMLGlob("templates/*")
 	router.POST("/upload", controller.Upload)
 	router.GET("/upload", controller.IndexHtmlUpload)
-	router.Run(":8080")
+	router.POST("/QiNiuUpload", controller.QinuiYunUpLoad)
+	router.Run(":8088")
 }
